@@ -21,3 +21,7 @@ For prediction and UNet++ training, this project requires
 - seaborn
 
 See the YOLOv5 repository for YOLOv5 training requirements.
+
+## Reference
+- [YOLOv5](https://github.com/ultralytics/yolov5)
+- [UNet++](https://github.com/MrGiovanni/UNetPlusPlus)
