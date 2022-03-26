@@ -24,7 +24,18 @@ See the YOLOv5 repository for YOLOv5 training requirements.
 
 ## Examples
 ```
+# prediction
 python3.6 prediction.py --source img.png
+
+# train YOLOv5
+cd yolov5
+python3.6 train.py --epoch 100 --data cyst_multiclass.yaml --weights yolov5m.pt --img 256 --batch 16
+
+# generate heatmap for UNet++
+python3.6 generate_heatmap.py
+
+# train UNet++
+python3.6 train_unetpp.py
 ```
 
 ## Reference
