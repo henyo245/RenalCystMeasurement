@@ -22,6 +22,11 @@ For prediction and UNet++ training, this project requires
 
 See the YOLOv5 repository for YOLOv5 training requirements.
 
+## Examples
+```
+python3.6 prediction.py --source img.png
+```
+
 ## Reference
 - [YOLOv5](https://github.com/ultralytics/yolov5)
 - [UNet++](https://github.com/MrGiovanni/UNetPlusPlus)
