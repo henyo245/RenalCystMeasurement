@@ -57,6 +57,15 @@ def return_coordinate(imgsz, coord_crop, pt):
     
     return (coord0_re,coord1_re)
 
+def direction_img(dm,tmp_zahyo):
+    width=dm.shape[1]
+    height=dm.shape[0]
+    center=(height/2, width/2)
+    if dm[tmp_zahyo[0][0],tmp_zahyo[0][1],0]<dm[tmp_zahyo[1][0],tmp_zahyo[1][1],1]:
+        return 1
+    else:
+        return 0
+    
 def pred2coord(imgsz, img_path, Y_pred_denorm, pts):
     pred_coords={}
     file = os.path.basename(img_path)
@@ -71,6 +80,7 @@ def pred2coord(imgsz, img_path, Y_pred_denorm, pts):
             q, mod=divmod(a, width)
             #print((mod,q), coord[i])
             tmp_coord.append((int(q),int(mod)))
+        channel = direction_img(dm,tmp_coord)
         
         tmp_coord_new = return_coordinate(imgsz, tmp_coord, pt)
         if abs((pt[1][0]-pt[0][0])-np.linalg.norm(np.array(tmp_coord_new[0])-np.array(tmp_coord_new[1]))) > (pt[1][0]-pt[0][0])*0.05:
