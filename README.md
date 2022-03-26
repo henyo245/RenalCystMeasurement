@@ -1,7 +1,7 @@
 # Renal Cyst Measurement
 
 This repository contains code to detect and measure renal cysts on abdominal ultrasound images.
-<img src="https://github.com/henyo245/RenalCystMeasurement/blob/master/img.png" width=30% height=30%><img src="https://github.com/henyo245/RenalCystMeasurement/blob/master/img_pred.png" width=30% height=30%>
+<img src="https://github.com/henyo245/RenalCystMeasurement/blob/master/img.png" width=30% height=30%> <img src="https://github.com/henyo245/RenalCystMeasurement/blob/master/img_pred.png" width=30% height=30%>
 ## Requirement
 For prediction and UNet++ training, this project requires 
 - cuda8
