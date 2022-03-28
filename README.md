@@ -40,7 +40,7 @@ data
   ├images
   │ ├image1.png
   │ ├image2.png
-  ├...
+  │ ├...
   │
   └labels
     ├image1.txt
