@@ -24,7 +24,7 @@ See the YOLOv5 repository for YOLOv5 training requirements.
 
 ## Data
 ```
-data
+RenalCystMeasurement/data
 ├unetpp
 │ ├input
 │ │ ├image1.png
