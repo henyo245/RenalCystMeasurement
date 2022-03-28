@@ -23,6 +23,30 @@ For prediction and UNet++ training, this project requires
 See the YOLOv5 repository for YOLOv5 training requirements.
 
 ## Data
+```
+data
+├unetpp
+│ ├input
+│ │ ├image1.png
+│ │ ├image2.png
+│ │ ├...
+│ │
+│ └groundTruth
+│ │ ├image1.png
+│ │ ├image2.png
+│ │ ├...
+│ 
+└yolov5
+  ├images
+  │ ├image1.png
+  │ ├image2.png
+  ├...
+  │
+  └labels
+    ├image1.txt
+    ├image2.txt
+    ├...
+```
 
 ## Examples
 ```
